@@ -77,7 +77,7 @@ const Navigation: React.FC<NavigationProps> = ({ userRole }) => {
                     to={item.href}
                     className={`px-3 py-2 rounded-md text-sm font-medium flex items-center space-x-2 transition-colors ${
                       isActivePath(item.href)
-                        ? 'bg-orange-100 text-orange-600'
+                        ? 'bg-blue-100 text-blue-600'
                         : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                     }`}
                   >
@@ -172,7 +172,7 @@ const Navigation: React.FC<NavigationProps> = ({ userRole }) => {
                   to={item.href}
                   className={`block px-3 py-2 rounded-md text-base font-medium flex items-center space-x-2 ${
                     isActivePath(item.href)
-                      ? 'bg-orange-100 text-orange-600'
+                      ? 'bg-blue-100 text-blue-600'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
