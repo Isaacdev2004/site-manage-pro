@@ -53,7 +53,7 @@ const Dashboard: React.FC<DashboardProps> = ({ userRole }) => {
     switch (status) {
       case 'toStart': return 'bg-gray-100 text-gray-700';
       case 'inProgress': return 'bg-blue-100 text-blue-700';
-      case 'paused': return 'bg-yellow-100 text-yellow-700';
+      case 'paused': return 'bg-blue-50 text-blue-600';
       case 'completed': return 'bg-green-100 text-green-700';
       default: return 'bg-gray-100 text-gray-700';
     }
@@ -117,7 +117,7 @@ const Dashboard: React.FC<DashboardProps> = ({ userRole }) => {
           <CardContent>
             <div className="text-2xl font-bold">{summaryData.pendingOrders}</div>
             <p className="text-xs text-muted-foreground">
-              <AlertTriangle className="h-3 w-3 inline mr-1 text-yellow-500" />
+              <AlertTriangle className="h-3 w-3 inline mr-1 text-blue-500" />
               3 overdue
             </p>
           </CardContent>
@@ -215,7 +215,7 @@ const Dashboard: React.FC<DashboardProps> = ({ userRole }) => {
                 { action: 'Progress updated', site: 'School Building E', time: '2 days ago' }
               ].map((activity, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-medium">{activity.action}</p>
                     <p className="text-xs text-gray-600">{activity.site || activity.item || activity.client}</p>
